@@ -1,0 +1,57 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear:both;
+}
+body{
+  font-family: 'Nerko One', cursive;
+  background-color: lightblue;
+}
+.titolo{
+  text-align: center;
+  font-size:80px;
+  color: white;
+  text-shadow:2px 2px black;
+  text-transform: uppercase;
+}
+.box{
+  width:80%;
+  margin:auto;
+  position:relative;
+}
+.riga{
+  margin: 20px 0;
+  text-align: center;
+  position:relative;
+}
+.carta{
+  width: 350px;
+  height:400px;
+  display: inline-block;
+  box-shadow: 1px 1px black;
+  border:1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  color:purple;
+  cursor: pointer;
+  margin: 8px;
+}
+.img{
+  width: 350px;
+  height: 350px;
+}
+.scritta{
+  line-height: 50px;
+  font-size: 35px;
+  margin:0; 
+}
+
+.carta:hover{
+  color: orangered;
+}
+
