@@ -19,6 +19,9 @@ body{
   text-shadow:2px 2px black;
   text-transform: uppercase;
 }
+main{
+  height:1310px;
+}
 .box{
   width:80%;
   margin:auto;
@@ -32,14 +35,14 @@ body{
 .carta{
   width: 350px;
   height:400px;
-  display: inline-block;
+
   box-shadow: 1px 1px black;
   border:1px solid black;
   border-radius: 15px;
   background-color: white;
   color:purple;
   cursor: pointer;
-  margin: 8px;
+  display: none;
 }
 .img{
   width: 350px;
@@ -50,8 +53,62 @@ body{
   font-size: 35px;
   margin:0; 
 }
-
+.active{
+  color: orangered;
+  display:inline-block;
+}
 .carta:hover{
   color: orangered;
+}
+.back{
+  background-image: url("img/pattern.png");
+  width: 350px;
+  height: 400px;
+  box-shadow: 1px 1px black;
+  border:1px solid black;
+  border-radius: 15px;
+}
+
+.p1, .c1{
+  position: absolute;
+}
+
+.p2, .c2{
+  position: absolute;
+  left: 370px;
+}
+.p3, .c3{
+  position: absolute;
+  left: 740px;
+}
+.p4{
+  position: absolute;
+  left: 1110px;
+}
+
+.r1{
+  position:absolute;
+  top: 20px;
+}
+.r2{
+  position:absolute;
+  top: 440px;
+}
+.r3{
+  position:absolute;
+  top: 860px;
+}
+.r4{
+  position:absolute;
+  top: 1300px;
+} 
+
+.back:hover .carta{
+  display:block;
+}
+footer{
+  text-align:center;
+  font-size: 30px;
+  vertical-align: center;
 }
 
